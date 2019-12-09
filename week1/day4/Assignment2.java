@@ -47,10 +47,7 @@ public class Assignment2 {
 		driver.findElementByXPath("//input[@id='password']").sendKeys("crmsfa");
 		
 		driver.findElementByXPath("//input[@type='submit']").click();
-		
-		
-		Thread.sleep(1000);
-		
+
 		driver.findElementByXPath("//a[contains(@href,'crmsfa')]").click();
 			
 		Thread.sleep(1000);
@@ -61,31 +58,19 @@ public class Assignment2 {
 		
 		driver.findElementByXPath("(//div//input[@name='companyName'])[1]").sendKeys(Company);
 			 		
-		Thread.sleep(1000);
-		
 		driver.findElementByXPath("//div[@id='quickNewLead']//input[@name='firstName']").sendKeys(Firstname);
 		
-		Thread.sleep(1000);
-							
 		driver.findElementByXPath("//div[@id='quickNewLead']//input[@name='lastName']").sendKeys(Lastname);
-		
-		Thread.sleep(1000);
 		
 		driver.findElementByXPath("//button[contains(text(),'Create Lead')]").click();
 				
-		
-		  Thread.sleep(1000);
+		 Thread.sleep(1000);
 		  
-		  driver.findElementByXPath("//a[contains(text(),'Leads')]").click();
-		  
-
-		  Thread.sleep(1000);
-		  
+	         driver.findElementByXPath("//a[contains(text(),'Leads')]").click();
+				
 		  driver.findElementByXPath("//a[contains(text(),'Find Leads')]").click();
-		  
-
-		  Thread.sleep(1000);
-		  
+		
+		Thread.sleep(1000);
 		  
 		  driver.findElementByXPath("(//div[@class='x-panel x-panel-noborder x-form-label-right'])[2]//input[@name='firstName']").sendKeys(Firstname);
 		  
