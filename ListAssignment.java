@@ -46,7 +46,9 @@ public class ListAssignment {
 				specialTVElement.add(tvNames); //adding the TV names to the list
 								
 			}
-				
+	
+		System.out.println("The total number of Sumsung TVs in the list are :"+specialTVElement.size());
+			
 		}
 		
 		Collections.sort(specialTVElement);  //sorting the TV Names
