@@ -53,7 +53,7 @@ public class Assignment1 {
 		
 		List<WebElement> trainNames = driver.findElementsByXPath("//table[contains(@class,'DataTable TrainList')]/tbody[1]/tr/td[2]");
 		
-	    List<String> TrainNames = new ArrayList<String>();
+	        List<String> TrainNames = new ArrayList<String>();
 		
 		System.out.println("The Total trains from Chennai to Bangalore:"+ trainNames.size());
 		
@@ -77,11 +77,22 @@ public class Assignment1 {
 			 		  
 		}
 		  
-		  System.out.println(uniqueTrainNames1);	
+		  System.out.println("The Train Names without any duplicate : " +uniqueTrainNames1);
+		  	  
+		  	
+		  List<WebElement> etrainNumbers = driver.findElementsByXPath("//table[contains(@class,'DataTable TrainList')]/tbody[1]/tr/td[1]");
 		  
-		  	 
+		  List<String> trainNumber = new ArrayList<String>();
+		  
+		  for (WebElement eachTrainNumber : etrainNumbers) {
+			  
+			  		trainNumber.add(eachTrainNumber.getText());
+		}
+		 
+		  System.out.println("The Train Numbers are:"+trainNumber);
 		  }
 		 
+	
 		
 	}
 
